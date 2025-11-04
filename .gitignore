@@ -1,0 +1,9 @@
+data/
+models/
+results/
+# Ignore everything in comparison_results
+*.pkl
+
+# But don't ignore the plots directory
+!comparison_results/plots/
+!comparison_results/plots/**

@@ -1,0 +1,2208 @@
+======================================================================
+BATCH 3 RESULTS
+======================================================================
+
+----------------------------------------------------------------------
+Sample Index: 300
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • E21
+  • E212
+  • ECAT
+
+PREDICTED (3 labels):
+  ✓ E21
+  ✓ E212
+  ✓ ECAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 301
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 302
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M12
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M12
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 303
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GPOL
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GPOL
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 304
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • E21
+  • E212
+  • ECAT
+
+PREDICTED (3 labels):
+  ✓ E21
+  ✓ E212
+  ✓ ECAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 305
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GSPO
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GSPO
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 306
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (5 labels):
+  • G15
+  • G158
+  • GCAT
+  • GDEF
+  • GDIP
+
+PREDICTED (3 labels):
+  ✓ GCAT
+  ✓ GDEF
+  ✓ GDIP
+
+MISSED (2 labels):
+  • G158
+  • G15
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.600
+  F1-Score:  0.750
+
+----------------------------------------------------------------------
+Sample Index: 307
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • E21
+  • E212
+  • ECAT
+
+PREDICTED (3 labels):
+  ✓ E21
+  ✓ E212
+  ✓ ECAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 308
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GSPO
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GSPO
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 309
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C41
+  • C411
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C41
+  ✓ C411
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 310
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M11
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 311
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C15
+  • C151
+  • C1511
+  • CCAT
+
+PREDICTED (4 labels):
+  ✓ C15
+  ✓ C151
+  ✓ C1511
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 312
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 313
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GVIO
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GVIO
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 314
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M143
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M143
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 315
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • GCAT
+  • GDIP
+  • GPOL
+  • GVIO
+
+PREDICTED (4 labels):
+  ✓ GCAT
+  ✗ GCRIM
+  ✓ GPOL
+  ✓ GVIO
+
+MISSED (1 labels):
+  • GDIP
+
+EXTRA (1 labels):
+  • GCRIM
+
+METRICS:
+  Precision: 0.750
+  Recall:    0.750
+  F1-Score:  0.750
+
+----------------------------------------------------------------------
+Sample Index: 316
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • C14
+  • CCAT
+
+PREDICTED (3 labels):
+  ✗ C15
+  ✗ C152
+  ✓ CCAT
+
+MISSED (1 labels):
+  • C14
+
+EXTRA (2 labels):
+  • C15
+  • C152
+
+METRICS:
+  Precision: 0.333
+  Recall:    0.500
+  F1-Score:  0.400
+
+----------------------------------------------------------------------
+Sample Index: 317
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • C24
+  • CCAT
+
+PREDICTED (2 labels):
+  ✓ C24
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 318
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • E12
+  • ECAT
+  • GCAT
+  • GPOL
+
+PREDICTED (4 labels):
+  ✓ E12
+  ✓ ECAT
+  ✓ GCAT
+  ✓ GPOL
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 319
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • GCAT
+  • GDIP
+  • GENT
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GENT
+
+MISSED (1 labels):
+  • GDIP
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.667
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 320
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GDIP
+
+PREDICTED (3 labels):
+  ✓ GCAT
+  ✓ GDIP
+  ✗ GVIO
+
+EXTRA (1 labels):
+  • GVIO
+
+METRICS:
+  Precision: 0.667
+  Recall:    1.000
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 321
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (6 labels):
+  • C17
+  • C174
+  • CCAT
+  • E21
+  • E212
+  • ECAT
+
+PREDICTED (6 labels):
+  ✓ C17
+  ✓ C174
+  ✓ CCAT
+  ✓ E21
+  ✓ E212
+  ✓ ECAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 322
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M11
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 323
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (6 labels):
+  • C21
+  • CCAT
+  • G15
+  • G153
+  • GCAT
+  • GVIO
+
+PREDICTED (7 labels):
+  ✗ C13
+  ✓ CCAT
+  ✗ E41
+  ✓ G15
+  ✓ GCAT
+  ✗ GJOB
+  ✓ GVIO
+
+MISSED (2 labels):
+  • C21
+  • G153
+
+EXTRA (3 labels):
+  • C13
+  • E41
+  • GJOB
+
+METRICS:
+  Precision: 0.571
+  Recall:    0.667
+  F1-Score:  0.615
+
+----------------------------------------------------------------------
+Sample Index: 324
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M11
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 325
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (5 labels):
+  • C15
+  • C151
+  • C18
+  • C181
+  • CCAT
+
+PREDICTED (5 labels):
+  ✓ C15
+  ✗ C152
+  ✓ C18
+  ✓ C181
+  ✓ CCAT
+
+MISSED (1 labels):
+  • C151
+
+EXTRA (1 labels):
+  • C152
+
+METRICS:
+  Precision: 0.800
+  Recall:    0.800
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 326
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GVIO
+
+PREDICTED (4 labels):
+  ✓ GCAT
+  ✗ GDEF
+  ✗ GPOL
+  ✓ GVIO
+
+EXTRA (2 labels):
+  • GDEF
+  • GPOL
+
+METRICS:
+  Precision: 0.500
+  Recall:    1.000
+  F1-Score:  0.667
+
+----------------------------------------------------------------------
+Sample Index: 327
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C11
+  • C18
+  • C181
+  • CCAT
+
+PREDICTED (4 labels):
+  ✓ C11
+  ✓ C18
+  ✓ C181
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 328
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GDIP
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GDIP
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 329
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C152
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C15
+  ✓ C152
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 330
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C13
+  • CCAT
+  • M11
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ C13
+  ✓ CCAT
+  ✓ M11
+
+MISSED (1 labels):
+  • MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.750
+  F1-Score:  0.857
+
+----------------------------------------------------------------------
+Sample Index: 331
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M11
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 332
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • E21
+  • E211
+  • E212
+  • ECAT
+
+PREDICTED (4 labels):
+  ✓ E21
+  ✓ E211
+  ✓ E212
+  ✓ ECAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 333
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 334
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GCRIM
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GCRIM
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 335
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C18
+  • C181
+  • CCAT
+
+PREDICTED (2 labels):
+  ✓ CCAT
+  ✗ ECAT
+
+MISSED (2 labels):
+  • C18
+  • C181
+
+EXTRA (1 labels):
+  • ECAT
+
+METRICS:
+  Precision: 0.500
+  Recall:    0.333
+  F1-Score:  0.400
+
+----------------------------------------------------------------------
+Sample Index: 336
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GDIP
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GDIP
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 337
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C151
+  • CCAT
+
+PREDICTED (4 labels):
+  ✓ C15
+  ✓ C151
+  ✗ C1511
+  ✓ CCAT
+
+EXTRA (1 labels):
+  • C1511
+
+METRICS:
+  Precision: 0.750
+  Recall:    1.000
+  F1-Score:  0.857
+
+----------------------------------------------------------------------
+Sample Index: 338
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C17
+  • C172
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C17
+  ✓ C172
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 339
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GSPO
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GSPO
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 340
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C152
+  • CCAT
+
+PREDICTED (4 labels):
+  ✓ C15
+  ✗ C151
+  ✓ C152
+  ✓ CCAT
+
+EXTRA (1 labels):
+  • C151
+
+METRICS:
+  Precision: 0.750
+  Recall:    1.000
+  F1-Score:  0.857
+
+----------------------------------------------------------------------
+Sample Index: 341
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M11
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 342
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GHEA
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GHEA
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 343
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C41
+  • C411
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C41
+  ✓ C411
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 344
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • ECAT
+  • GCAT
+  • GPOL
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GPOL
+
+MISSED (1 labels):
+  • ECAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.667
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 345
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C151
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C15
+  ✓ C151
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 346
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M13
+  • M131
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M13
+  ✓ M131
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 347
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M13
+  • M131
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M13
+  ✓ M131
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 348
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 349
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C11
+  • C15
+  • C152
+  • CCAT
+
+PREDICTED (4 labels):
+  ✓ C11
+  ✓ C15
+  ✓ C152
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 350
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 351
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C11
+  • C15
+  • C152
+  • CCAT
+
+PREDICTED (6 labels):
+  ✓ C11
+  ✓ C15
+  ✓ C152
+  ✗ C18
+  ✗ C181
+  ✓ CCAT
+
+EXTRA (2 labels):
+  • C18
+  • C181
+
+METRICS:
+  Precision: 0.667
+  Recall:    1.000
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 352
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GSPO
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GSPO
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 353
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 354
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (6 labels):
+  • C17
+  • C18
+  • C183
+  • CCAT
+  • E12
+  • ECAT
+
+PREDICTED (3 labels):
+  ✓ C17
+  ✓ CCAT
+  ✓ ECAT
+
+MISSED (3 labels):
+  • C183
+  • E12
+  • C18
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.500
+  F1-Score:  0.667
+
+----------------------------------------------------------------------
+Sample Index: 355
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 356
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M142
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M142
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 357
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • M12
+  • M13
+  • M131
+  • MCAT
+
+PREDICTED (4 labels):
+  ✓ M12
+  ✓ M13
+  ✓ M131
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 358
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • GCAT
+  • GDEF
+  • GPOL
+  • GVOTE
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GPOL
+
+MISSED (2 labels):
+  • GDEF
+  • GVOTE
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.500
+  F1-Score:  0.667
+
+----------------------------------------------------------------------
+Sample Index: 359
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C31
+  • C33
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C33
+  ✗ C331
+  ✓ CCAT
+
+MISSED (1 labels):
+  • C31
+
+EXTRA (1 labels):
+  • C331
+
+METRICS:
+  Precision: 0.667
+  Recall:    0.667
+  F1-Score:  0.667
+
+----------------------------------------------------------------------
+Sample Index: 360
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C18
+  • C181
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C18
+  ✓ C181
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 361
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M143
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M143
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 362
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GSPO
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GSPO
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 363
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GDIS
+
+PREDICTED (3 labels):
+  ✓ GCAT
+  ✓ GDIS
+  ✗ GENV
+
+EXTRA (1 labels):
+  • GENV
+
+METRICS:
+  Precision: 0.667
+  Recall:    1.000
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 364
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (1 labels):
+  • GCAT
+
+PREDICTED (1 labels):
+  ✓ GCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 365
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M143
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M143
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 366
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (5 labels):
+  • C17
+  • C171
+  • C18
+  • C181
+  • CCAT
+
+PREDICTED (5 labels):
+  ✓ C17
+  ✓ C171
+  ✓ C18
+  ✓ C181
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 367
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (5 labels):
+  • E51
+  • E512
+  • ECAT
+  • GCAT
+  • GDIP
+
+PREDICTED (5 labels):
+  ✗ C13
+  ✗ C24
+  ✗ CCAT
+  ✓ E51
+  ✓ ECAT
+
+MISSED (3 labels):
+  • GDIP
+  • GCAT
+  • E512
+
+EXTRA (3 labels):
+  • CCAT
+  • C13
+  • C24
+
+METRICS:
+  Precision: 0.400
+  Recall:    0.400
+  F1-Score:  0.400
+
+----------------------------------------------------------------------
+Sample Index: 368
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C17
+  • C171
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C17
+  ✓ C171
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 369
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GDIP
+
+PREDICTED (2 labels):
+  ✓ GCAT
+  ✓ GDIP
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 370
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • C31
+  • CCAT
+
+PREDICTED (2 labels):
+  ✓ C31
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 371
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C21
+  • C24
+  • C31
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C21
+  ✓ C31
+  ✓ CCAT
+
+MISSED (1 labels):
+  • C24
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.750
+  F1-Score:  0.857
+
+----------------------------------------------------------------------
+Sample Index: 372
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M12
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M12
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 373
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • E21
+  • ECAT
+  • GCAT
+  • GCRIM
+
+PREDICTED (6 labels):
+  ✓ E21
+  ✗ E211
+  ✓ ECAT
+  ✓ GCAT
+  ✓ GCRIM
+  ✗ GPOL
+
+EXTRA (2 labels):
+  • GPOL
+  • E211
+
+METRICS:
+  Precision: 0.667
+  Recall:    1.000
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 374
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 375
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • GCAT
+  • GPOL
+  • GVOTE
+
+PREDICTED (3 labels):
+  ✓ GCAT
+  ✓ GPOL
+  ✓ GVOTE
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 376
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C152
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C15
+  ✓ C152
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 377
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C16
+  • C17
+  • CCAT
+
+PREDICTED (1 labels):
+  ✓ CCAT
+
+MISSED (2 labels):
+  • C16
+  • C17
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.333
+  F1-Score:  0.500
+
+----------------------------------------------------------------------
+Sample Index: 378
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C13
+  • C31
+  • CCAT
+
+PREDICTED (2 labels):
+  ✓ C13
+  ✓ CCAT
+
+MISSED (1 labels):
+  • C31
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.667
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 379
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C14
+  • C17
+  • C171
+  • CCAT
+
+PREDICTED (4 labels):
+  ✓ C14
+  ✓ C17
+  ✓ C171
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 380
+Status: NO_MATCH
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (3 labels):
+  ✗ C15
+  ✗ C152
+  ✗ CCAT
+
+MISSED (2 labels):
+  • M11
+  • MCAT
+
+EXTRA (3 labels):
+  • CCAT
+  • C15
+  • C152
+
+METRICS:
+  Precision: 0.000
+  Recall:    0.000
+  F1-Score:  0.000
+
+----------------------------------------------------------------------
+Sample Index: 381
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C11
+  • C16
+  • C17
+  • CCAT
+
+PREDICTED (2 labels):
+  ✓ C17
+  ✓ CCAT
+
+MISSED (2 labels):
+  • C11
+  • C16
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.500
+  F1-Score:  0.667
+
+----------------------------------------------------------------------
+Sample Index: 382
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (2 labels):
+  ✓ M11
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 383
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • GCAT
+  • GENV
+  • GPOL
+
+PREDICTED (4 labels):
+  ✗ C13
+  ✗ CCAT
+  ✓ GCAT
+  ✓ GENV
+
+MISSED (1 labels):
+  • GPOL
+
+EXTRA (2 labels):
+  • CCAT
+  • C13
+
+METRICS:
+  Precision: 0.500
+  Recall:    0.667
+  F1-Score:  0.571
+
+----------------------------------------------------------------------
+Sample Index: 384
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C42
+  • CCAT
+  • GCAT
+  • GJOB
+
+PREDICTED (6 labels):
+  ✓ C42
+  ✓ CCAT
+  ✗ E41
+  ✗ ECAT
+  ✓ GCAT
+  ✓ GJOB
+
+EXTRA (2 labels):
+  • ECAT
+  • E41
+
+METRICS:
+  Precision: 0.667
+  Recall:    1.000
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 385
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (3 labels):
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 386
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (7 labels):
+  • C42
+  • CCAT
+  • E41
+  • ECAT
+  • GCAT
+  • GJOB
+  • GPOL
+
+PREDICTED (8 labels):
+  ✓ C42
+  ✓ CCAT
+  ✓ E41
+  ✓ ECAT
+  ✓ GCAT
+  ✓ GJOB
+  ✓ GPOL
+  ✗ GVIO
+
+EXTRA (1 labels):
+  • GVIO
+
+METRICS:
+  Precision: 0.875
+  Recall:    1.000
+  F1-Score:  0.933
+
+----------------------------------------------------------------------
+Sample Index: 387
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (4 labels):
+  • C12
+  • CCAT
+  • GCAT
+  • GCRIM
+
+PREDICTED (4 labels):
+  ✓ C12
+  ✓ CCAT
+  ✓ GCAT
+  ✓ GCRIM
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 388
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (8 labels):
+  • E12
+  • ECAT
+  • G15
+  • G154
+  • GCAT
+  • M13
+  • M132
+  • MCAT
+
+PREDICTED (4 labels):
+  ✓ ECAT
+  ✓ G15
+  ✓ GCAT
+  ✗ GPOL
+
+MISSED (5 labels):
+  • G154
+  • M132
+  • E12
+  • MCAT
+  • M13
+
+EXTRA (1 labels):
+  • GPOL
+
+METRICS:
+  Precision: 0.750
+  Recall:    0.375
+  F1-Score:  0.500
+
+----------------------------------------------------------------------
+Sample Index: 389
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (9 labels):
+  • C31
+  • C312
+  • CCAT
+  • E51
+  • E512
+  • ECAT
+  • G15
+  • G158
+  • GCAT
+
+PREDICTED (10 labels):
+  ✗ C13
+  ✓ C31
+  ✗ C311
+  ✓ CCAT
+  ✓ E51
+  ✓ E512
+  ✓ ECAT
+  ✓ G15
+  ✓ G158
+  ✓ GCAT
+
+MISSED (1 labels):
+  • C312
+
+EXTRA (2 labels):
+  • C13
+  • C311
+
+METRICS:
+  Precision: 0.800
+  Recall:    0.889
+  F1-Score:  0.842
+
+----------------------------------------------------------------------
+Sample Index: 390
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C151
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C15
+  ✓ C151
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 391
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • M11
+  • MCAT
+
+PREDICTED (3 labels):
+  ✗ CCAT
+  ✓ M11
+  ✓ MCAT
+
+EXTRA (1 labels):
+  • CCAT
+
+METRICS:
+  Precision: 0.667
+  Recall:    1.000
+  F1-Score:  0.800
+
+----------------------------------------------------------------------
+Sample Index: 392
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C151
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C15
+  ✓ C151
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 393
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (2 labels):
+  • GCAT
+  • GPOL
+
+PREDICTED (4 labels):
+  ✗ C13
+  ✗ CCAT
+  ✓ GCAT
+  ✓ GPOL
+
+EXTRA (2 labels):
+  • CCAT
+  • C13
+
+METRICS:
+  Precision: 0.500
+  Recall:    1.000
+  F1-Score:  0.667
+
+----------------------------------------------------------------------
+Sample Index: 394
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (7 labels):
+  • C24
+  • CCAT
+  • GCAT
+  • GWEA
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (6 labels):
+  ✓ C24
+  ✓ GCAT
+  ✓ GWEA
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+MISSED (1 labels):
+  • CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    0.857
+  F1-Score:  0.923
+
+----------------------------------------------------------------------
+Sample Index: 395
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C15
+  • C152
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C15
+  ✓ C152
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 396
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C18
+  • C181
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C18
+  ✓ C181
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 397
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • C17
+  • C171
+  • CCAT
+
+PREDICTED (3 labels):
+  ✓ C17
+  ✓ C171
+  ✓ CCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+----------------------------------------------------------------------
+Sample Index: 398
+Status: PARTIAL
+----------------------------------------------------------------------
+
+GROUND TRUTH (3 labels):
+  • M14
+  • M141
+  • MCAT
+
+PREDICTED (5 labels):
+  ✗ C21
+  ✗ CCAT
+  ✓ M14
+  ✓ M141
+  ✓ MCAT
+
+EXTRA (2 labels):
+  • CCAT
+  • C21
+
+METRICS:
+  Precision: 0.600
+  Recall:    1.000
+  F1-Score:  0.750
+
+----------------------------------------------------------------------
+Sample Index: 399
+Status: PERFECT
+----------------------------------------------------------------------
+
+GROUND TRUTH (1 labels):
+  • GCAT
+
+PREDICTED (1 labels):
+  ✓ GCAT
+
+METRICS:
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+

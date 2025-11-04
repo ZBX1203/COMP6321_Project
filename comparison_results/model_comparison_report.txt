@@ -1,0 +1,108 @@
+======================================================================
+MODEL COMPARISON REPORT
+======================================================================
+
+
+1. DNN (Our Model)
+----------------------------------------------------------------------
+F1 (Micro):       0.8415
+F1 (Macro):       0.6276
+F1 (Weighted):    0.8358
+Precision (Micro): 0.8679
+Recall (Micro):    0.8166
+Subset Accuracy:   0.6000
+Jaccard Score:     0.7997
+Hamming Loss:      0.0096
+Training Time:     0.00s
+Prediction Time:   6.28s
+
+2. Logistic-Regression
+----------------------------------------------------------------------
+F1 (Micro):       0.7975
+F1 (Macro):       0.4237
+F1 (Weighted):    0.7680
+Precision (Micro): 0.9278
+Recall (Micro):    0.6993
+Subset Accuracy:   0.5073
+Jaccard Score:     0.7269
+Hamming Loss:      0.0111
+Training Time:     8.18s
+Prediction Time:   0.18s
+
+3. Decision-Tree
+----------------------------------------------------------------------
+F1 (Micro):       0.7340
+F1 (Macro):       0.5131
+F1 (Weighted):    0.7263
+Precision (Micro): 0.7937
+Recall (Micro):    0.6826
+Subset Accuracy:   0.3646
+Jaccard Score:     0.6455
+Hamming Loss:      0.0155
+Training Time:     20.43s
+Prediction Time:   0.22s
+
+4. SGD-Classifier
+----------------------------------------------------------------------
+F1 (Micro):       0.7081
+F1 (Macro):       0.2378
+F1 (Weighted):    0.6456
+Precision (Micro): 0.9515
+Recall (Micro):    0.5639
+Subset Accuracy:   0.3690
+Jaccard Score:     0.6113
+Hamming Loss:      0.0146
+Training Time:     5.72s
+Prediction Time:   0.18s
+
+5. Naive-Bayes
+----------------------------------------------------------------------
+F1 (Micro):       0.5767
+F1 (Macro):       0.1111
+F1 (Weighted):    0.4822
+Precision (Micro): 0.9257
+Recall (Micro):    0.4188
+Subset Accuracy:   0.1988
+Jaccard Score:     0.4715
+Hamming Loss:      0.0192
+Training Time:     22.03s
+Prediction Time:   7.16s
+
+6. Random-Forest
+----------------------------------------------------------------------
+F1 (Micro):       0.4961
+F1 (Macro):       0.1118
+F1 (Weighted):    0.4202
+Precision (Micro): 0.9733
+Recall (Micro):    0.3329
+Subset Accuracy:   0.1605
+Jaccard Score:     0.3839
+Hamming Loss:      0.0212
+Training Time:     14.65s
+Prediction Time:   1.88s
+
+7. Dummy-Random
+----------------------------------------------------------------------
+F1 (Micro):       0.0587
+F1 (Macro):       0.0495
+F1 (Weighted):    0.2062
+Precision (Micro): 0.0312
+Recall (Micro):    0.4981
+Subset Accuracy:   0.0000
+Jaccard Score:     0.0303
+Hamming Loss:      0.4999
+Training Time:     0.00s
+Prediction Time:   0.01s
+
+8. Dummy-Frequent
+----------------------------------------------------------------------
+F1 (Micro):       0.0000
+F1 (Macro):       0.0000
+F1 (Weighted):    0.0000
+Precision (Micro): 0.0000
+Recall (Micro):    0.0000
+Subset Accuracy:   0.0000
+Jaccard Score:     0.0000
+Hamming Loss:      0.0313
+Training Time:     0.00s
+Prediction Time:   0.00s

@@ -1,0 +1,21 @@
+======================================================================
+SUMMARY STATISTICS
+======================================================================
+
+Total samples tested: 1000
+Timestamp: 2025-11-02 21:19:20
+
+STATUS DISTRIBUTION:
+  Perfect matches:   623 (62.30%)
+  Partial matches:   362 (36.20%)
+  No matches:         15 ( 1.50%)
+
+AVERAGE METRICS:
+  Precision: 0.8978
+  Recall:    0.8570
+  F1-Score:  0.8591
+
+LABEL STATISTICS:
+  Avg true labels per sample:      3.26
+  Avg predicted labels per sample: 3.02
+  Avg correct labels per sample:   2.65
