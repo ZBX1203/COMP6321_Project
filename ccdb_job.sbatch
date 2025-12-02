@@ -14,7 +14,7 @@ set -euo pipefail
 # Load required modules (check with 'module avail' on Trillium)
 module purge
 module load python/3.10
-module load cuda/12
+module load cuda/12.9
 
 PROJECT_ROOT=${SLURM_SUBMIT_DIR:-$PWD}
 VENV_DIR="$HOME/comp6321_env"
