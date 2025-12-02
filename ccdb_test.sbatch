@@ -7,8 +7,8 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --time=00:30:00
 #SBATCH --partition=debug
-#SBATCH --output=/home/bingxu97/scratch/logs/test_%j.out
-#SBATCH --error=/home/bingxu97/scratch/logs/test_%j.err
+#SBATCH --output=/scratch/bingxu97/logs/test_%j.out
+#SBATCH --error=/scratch/bingxu97/logs/test_%j.err
 
 set -euo pipefail
 
@@ -25,7 +25,7 @@ module load cuda/12
 PROJECT_ROOT=${SLURM_SUBMIT_DIR:-$PWD}
 VENV_DIR="$HOME/comp6321_env"
 
-mkdir -p "$HOME/scratch/logs"
+mkdir -p "/scratch/bingxu97/logs"
 
 # Create virtual environment if needed
 if [ ! -d "$VENV_DIR" ]; then
