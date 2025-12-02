@@ -7,8 +7,8 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --time=00:30:00
 #SBATCH --partition=debug
-#SBATCH --output=~/scratch/logs/test_%j.out
-#SBATCH --error=~/scratch/logs/test_%j.err
+#SBATCH --output=/home/bingxu97/scratch/logs/test_%j.out
+#SBATCH --error=/home/bingxu97/scratch/logs/test_%j.err
 
 set -euo pipefail
 

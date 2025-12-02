@@ -6,8 +6,8 @@
 #SBATCH --cpus-per-task=16
 #SBATCH --gpus-per-node=1
 #SBATCH --time=04:00:00
-#SBATCH --output=~/scratch/logs/ccdb_%j.out
-#SBATCH --error=~/scratch/logs/ccdb_%j.err
+#SBATCH --output=/home/bingxu97/scratch/logs/ccdb_%j.out
+#SBATCH --error=/home/bingxu97/scratch/logs/ccdb_%j.err
 
 set -euo pipefail
 
