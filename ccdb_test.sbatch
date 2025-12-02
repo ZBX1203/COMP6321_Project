@@ -19,6 +19,8 @@ echo "Start time: $(date)"
 
 # Load modules
 module purge
+module load StdEnv/2023
+module load gcc/12.3
 module load python/3.10
 module load cuda/12.9
 
