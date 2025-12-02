@@ -1,5 +1,5 @@
 ## Overview
-
+ssh bingxu97@trillium.alliancecan.ca
 -  Multi-label classification (103 categories, ~804K documents)
 -  GPU-accelerated 3-layer DNN with Batch Normalization
 -  5 baseline model comparisons (Logistic, SVM, Random Forest, etc.)
