@@ -5,10 +5,9 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --gpus-per-node=1
-#SBATCH --mem=64G
 #SBATCH --time=04:00:00
-#SBATCH --output=logs/ccdb_%j.out
-#SBATCH --error=logs/ccdb_%j.err
+#SBATCH --output=$SCRATCH/logs/ccdb_%j.out
+#SBATCH --error=$SCRATCH/logs/ccdb_%j.err
 
 set -euo pipefail
 
@@ -20,7 +19,7 @@ module load cuda/12
 PROJECT_ROOT=${SLURM_SUBMIT_DIR:-$PWD}
 VENV_DIR="$HOME/comp6321_env"
 
-mkdir -p "$PROJECT_ROOT/logs"
+mkdir -p "$SCRATCH/logs"
 
 # Create virtual environment if it doesn't exist
 if [ ! -d "$VENV_DIR" ]; then
