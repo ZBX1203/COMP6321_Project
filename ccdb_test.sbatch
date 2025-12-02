@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-node=1
-#SBATCH --time=00:30:00
+#SBATCH --time=01:00:00
 #SBATCH --partition=debug
 #SBATCH --output=/scratch/bingxu97/logs/test_%j.out
 #SBATCH --error=/scratch/bingxu97/logs/test_%j.err
