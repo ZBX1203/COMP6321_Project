@@ -18,8 +18,7 @@ class RCV1DataLoader:
         """
         self.data_dir = data_dir
         os.makedirs(data_dir, exist_ok=True)
-        os.makedirs('models', exist_ok=True)
-        os.makedirs('results/plots', exist_ok=True)
+        # Note: models and results directories should be created by the calling script if needed
 
     def download_and_split(self, test_size=0.2, val_size=0.1, random_state=42,
                           convert_to_dense=False, sample_size=None,full=False):

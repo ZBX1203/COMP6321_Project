@@ -21,7 +21,10 @@ module load cuda/12.9
 PROJECT_ROOT=${SLURM_SUBMIT_DIR:-$PWD}
 VENV_DIR="/scratch/bingxu97/comp6321_env"
 
+# Create necessary directories in /scratch
 mkdir -p "/scratch/bingxu97/logs"
+mkdir -p "/scratch/bingxu97/models"
+mkdir -p "/scratch/bingxu97/results/plots"
 
 # Activate pre-installed virtual environment
 echo "Activating virtual environment..."
