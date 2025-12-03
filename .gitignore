@@ -7,3 +7,7 @@ results/
 # But don't ignore the plots directory
 !comparison_results/plots/
 !comparison_results/plots/**
+
+# Slurm output files
+*.out
+*.err

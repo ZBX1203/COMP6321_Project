@@ -189,7 +189,7 @@ class MultiLabelEvaluator:
             print(f"  Total: {len(true_labels)} labels")
             if len(true_labels) > 0:
                 for i, label_idx in enumerate(true_labels, 1):
-                    label_name = target_names[label_idx] if target_names else f"Label_{label_idx}"
+                    label_name = target_names[label_idx] if target_names is not None else f"Label_{label_idx}"
                     print(f"  {i}. {label_name}")
             else:
                 print(f"  (No labels)")
@@ -198,7 +198,7 @@ class MultiLabelEvaluator:
             print(f"  Total: {len(pred_labels)} labels")
             if len(pred_labels) > 0:
                 for i, label_idx in enumerate(pred_labels, 1):
-                    label_name = target_names[label_idx] if target_names else f"Label_{label_idx}"
+                    label_name = target_names[label_idx] if target_names is not None else f"Label_{label_idx}"
                     status = "✓" if label_idx in correct else "✗"
                     print(f"  {i}. {status} {label_name}")
             else:
@@ -208,19 +208,19 @@ class MultiLabelEvaluator:
             print(f"   ✓ Correct:       {len(correct)} labels")
             if correct:
                 for label_idx in correct:
-                    label_name = target_names[label_idx] if target_names else f"Label_{label_idx}"
+                    label_name = target_names[label_idx] if target_names is not None else f"Label_{label_idx}"
                     print(f"      • {label_name}")
             
             print(f"   ✗ Missed:        {len(missed)} labels (False Negatives)")
             if missed:
                 for label_idx in missed:
-                    label_name = target_names[label_idx] if target_names else f"Label_{label_idx}"
+                    label_name = target_names[label_idx] if target_names is not None else f"Label_{label_idx}"
                     print(f"      • {label_name}")
             
             print(f"   ⚠ Extra:         {len(extra)} labels (False Positives)")
             if extra:
                 for label_idx in extra:
-                    label_name = target_names[label_idx] if target_names else f"Label_{label_idx}"
+                    label_name = target_names[label_idx] if target_names is not None else f"Label_{label_idx}"
                     print(f"      • {label_name}")
             
             # Performance metrics for this sample
@@ -272,7 +272,7 @@ class MultiLabelEvaluator:
             pred_count = np.sum(y_pred[:, i])
             correct_count = np.sum((y_true[:, i] == 1) & (y_pred[:, i] == 1))
             
-            label_name = target_names[i] if target_names else f"Label_{i}"
+            label_name = target_names[i] if target_names is not None else f"Label_{i}"
             
             precision = correct_count / pred_count if pred_count > 0 else 0
             recall = correct_count / true_count if true_count > 0 else 0

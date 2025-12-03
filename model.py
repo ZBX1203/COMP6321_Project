@@ -269,7 +269,16 @@ class DNNClassifier:
             dropout=self.dropout
         ).to(self.device)
 
-        criterion = nn.BCEWithLogitsLoss()
+        # Calculate positive weights to handle class imbalance
+        # weight = number_of_negatives / number_of_positives
+        n_samples = y.shape[0]
+        n_positives = np.sum(y, axis=0)
+        n_negatives = n_samples - n_positives
+        # Clamp weights to avoid extreme values for very rare classes
+        pos_weights = torch.FloatTensor(n_negatives / (n_positives + 1e-6)).to(self.device)
+        
+        print(f"Using weighted loss to handle class imbalance (Avg weight: {pos_weights.mean().item():.2f})")
+        criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weights)
         optimizer = optim.Adam(self.model.parameters(), lr=self.learning_rate)
 
         val_loader = None

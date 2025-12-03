@@ -35,19 +35,26 @@ def main():
 
     try:
         X_train, y_train = data_loader.load_data('train')
-        X_val, y_val = data_loader.load_data('val')
-        X_test, y_test = data_loader.load_data('test')
-        metadata = data_loader.load_metadata()
-        target_names = metadata['target_names']
-        print("✓ Loaded existing data splits")
+        
+        # Check if data is likely BERT (768 features)
+        if X_train.shape[1] == 768:
+            print("✓ Loaded existing BERT embeddings")
+            X_val, y_val = data_loader.load_data('val')
+            X_test, y_test = data_loader.load_data('test')
+            metadata = data_loader.load_metadata()
+            target_names = metadata['target_names']
+        else:
+            print(f"Existing data has {X_train.shape[1]} features (expected 768 for BERT). Regenerating...")
+            raise FileNotFoundError("Data mismatch")
+            
     except FileNotFoundError:
-        print("Data not found. Downloading and splitting...")
+        print("Generating BERT embeddings from raw text...")
+        # Using 20 Newsgroups dataset with BERT embeddings
         X_train, y_train, X_val, y_val, X_test, y_test, target_names = \
-            data_loader.download_and_split(
-                test_size=0.05,
-                val_size=0.05,
-                sample_size=100000,
-                full=True
+            data_loader.download_raw_and_embed(
+                test_size=0.2,
+                val_size=0.1,
+                max_samples=5000  # Adjust this based on your GPU/CPU capabilities
             )
 
     # Sample training data for DNN
@@ -76,7 +83,7 @@ def main():
         hidden_layers=[512, 256, 128],   # 3 hidden layers 8192,2048,512
         #hidden_layers=[32768,8192,2048,512, 256, 128],  # 6 hidden layers
         activation='relu',                # ReLU activation
-        dropout=0.3,                      # 30% dropout
+        dropout=0.5,                      # 30% dropout
         learning_rate=0.001,              
         batch_size=512,                   
         epochs=20,                        
@@ -91,17 +98,21 @@ def main():
     print("STEP 3-5: COMPREHENSIVE EVALUATION")
     print("="*70)
 
+    # Use a lower threshold to improve recall
+    pred_threshold = 0.3
+    print(f"Using prediction threshold: {pred_threshold}")
+
     print("\nEvaluating on training set...")
-    y_train_pred = model.predict(X_train_dnn)
+    y_train_pred = model.predict(X_train_dnn, threshold=pred_threshold)
     train_metrics = evaluator.evaluate(y_train_dnn, y_train_pred,
                                       target_names, 'Training')
 
     print("\nEvaluating on validation set...")
-    y_val_pred = model.predict(X_val)
+    y_val_pred = model.predict(X_val, threshold=pred_threshold)
     val_metrics = evaluator.evaluate(y_val, y_val_pred, target_names, 'Validation')
 
     print("\nEvaluating on test set...")
-    y_test_pred = model.predict(X_test)
+    y_test_pred = model.predict(X_test, threshold=pred_threshold)
     test_metrics = evaluator.evaluate(y_test, y_test_pred, target_names, 'Test')
 
 

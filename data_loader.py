@@ -1,4 +1,3 @@
-
 from sklearn.datasets import fetch_rcv1
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -162,3 +161,93 @@ class RCV1DataLoader:
     def load_metadata(self):
         with open(os.path.join(self.data_dir, 'metadata.json'), 'r') as f:
             return json.load(f)
+
+    def download_raw_and_embed(self, test_size=0.2, val_size=0.1, random_state=42, max_samples=5000):
+        """
+        Downloads raw text data (20 Newsgroups) and embeds it into vectors using BERT.
+        """
+        from sklearn.datasets import fetch_20newsgroups
+        from sklearn.preprocessing import LabelBinarizer
+        import torch
+        from transformers import BertTokenizer, BertModel
+        from tqdm import tqdm
+
+        print("="*70)
+        print("DOWNLOADING RAW DATASET (20 Newsgroups)")
+        print("="*70)
+
+        # Fetch raw text
+        print("Fetching raw text documents...")
+        newsgroups = fetch_20newsgroups(subset='all', remove=('headers', 'footers', 'quotes'))
+        raw_documents = newsgroups.data
+        y_raw = newsgroups.target
+        target_names = np.array(newsgroups.target_names)
+        
+        # Limit samples for BERT speed if needed
+        if max_samples and max_samples < len(raw_documents):
+             print(f"Subsampling to {max_samples} documents for BERT processing...")
+             indices = np.random.choice(len(raw_documents), max_samples, replace=False)
+             raw_documents = [raw_documents[i] for i in indices]
+             y_raw = y_raw[indices]
+
+        print(f"\nDownloaded {len(raw_documents):,} raw documents")
+
+        # BERT Embedding
+        print(f"\nEmbedding text to vectors using BERT (this may take a while)...")
+        
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        print(f"Using device: {device}")
+        
+        tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+        model = BertModel.from_pretrained('bert-base-uncased').to(device)
+        model.eval()
+        
+        embeddings = []
+        batch_size = 32
+        
+        for i in tqdm(range(0, len(raw_documents), batch_size), desc="Embedding batches"):
+            batch_docs = raw_documents[i:i+batch_size]
+            
+            # Tokenize
+            encoded_input = tokenizer(batch_docs, padding=True, truncation=True, max_length=128, return_tensors='pt')
+            input_ids = encoded_input['input_ids'].to(device)
+            attention_mask = encoded_input['attention_mask'].to(device)
+            
+            with torch.no_grad():
+                outputs = model(input_ids, attention_mask=attention_mask)
+                # Use CLS token embedding (index 0)
+                cls_embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
+                embeddings.append(cls_embeddings)
+        
+        X = np.vstack(embeddings)
+        print(f"Vectorized features shape: {X.shape}")
+        print(f"Data format: Dense NumPy array")
+
+        # Process labels
+        print("Binarizing labels for multi-label compatibility...")
+        lb = LabelBinarizer()
+        y = lb.fit_transform(y_raw)
+        print(f"Labels shape: {y.shape}")
+
+        # Split data
+        X_temp, X_test, y_temp, y_test = train_test_split(
+            X, y, test_size=test_size, random_state=random_state
+        )
+        
+        val_size_adjusted = val_size / (1 - test_size)
+        X_train, X_val, y_train, y_val = train_test_split(
+            X_temp, y_temp, test_size=val_size_adjusted, random_state=random_state
+        )
+
+        print("\n" + "="*70)
+        print("DATASET SPLIT")
+        print("="*70)
+        total = X.shape[0]
+        print(f"Training set:   {X_train.shape[0]:,} samples")
+        print(f"Validation set: {X_val.shape[0]:,} samples")
+        print(f"Test set:       {X_test.shape[0]:,} samples")
+
+        # Save processed data
+        self._save_data(X_train, y_train, X_val, y_val, X_test, y_test, target_names)
+        
+        return X_train, y_train, X_val, y_val, X_test, y_test, target_names
