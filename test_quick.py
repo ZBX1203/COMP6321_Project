@@ -15,7 +15,7 @@ print(f"CUDA available: {torch.cuda.is_available()}")
 
 # 测试数据加载
 print("\n1. Testing data loader...")
-data_loader = RCV1DataLoader(data_dir='data_test')
+data_loader = RCV1DataLoader(data_dir='/scratch/bingxu97/data_test')
 X_train, y_train, X_val, y_val, X_test, y_test, target_names = \
     data_loader.download_and_split(
         test_size=0.2,

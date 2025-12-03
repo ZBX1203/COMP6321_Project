@@ -26,8 +26,8 @@ def main():
     else:
         print("⚠ WARNING: No GPU detected, will use CPU")
 
-    data_loader = RCV1DataLoader(data_dir='data')
-    evaluator = MultiLabelEvaluator(output_dir='results/plots')
+    data_loader = RCV1DataLoader(data_dir='/scratch/bingxu97/data')
+    evaluator = MultiLabelEvaluator(output_dir='/scratch/bingxu97/results/plots')
 
     print("\n" + "="*70)
     print("STEP 1: DATA PREPARATION")
