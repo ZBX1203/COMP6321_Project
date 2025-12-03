@@ -29,19 +29,9 @@ VENV_DIR="/scratch/bingxu97/comp6321_env"
 
 mkdir -p "/scratch/bingxu97/logs"
 
-# Create virtual environment if needed
-if [ ! -d "$VENV_DIR" ]; then
-    echo "Creating virtual environment..."
-    python -m venv "$VENV_DIR"
-fi
-
-# Activate environment
+# Activate pre-installed virtual environment
+echo "Activating virtual environment..."
 source "$VENV_DIR/bin/activate"
-
-# Install dependencies
-echo "Installing dependencies..."
-python -m pip install --upgrade pip
-pip install --upgrade -r "$PROJECT_ROOT/requirements.txt"
 
 # Verify GPU
 echo ""

@@ -23,19 +23,9 @@ VENV_DIR="/scratch/bingxu97/comp6321_env"
 
 mkdir -p "/scratch/bingxu97/logs"
 
-# Create virtual environment if it doesn't exist
-if [ ! -d "$VENV_DIR" ]; then
-    echo "Creating virtual environment at $VENV_DIR..."
-    python -m venv "$VENV_DIR"
-fi
-
-# Activate virtual environment
+# Activate pre-installed virtual environment
+echo "Activating virtual environment..."
 source "$VENV_DIR/bin/activate"
-
-# Install dependencies
-echo "Installing dependencies..."
-python -m pip install --upgrade pip
-pip install --upgrade -r "$PROJECT_ROOT/requirements.txt"
 
 export PYTHONPATH="$PROJECT_ROOT:${PYTHONPATH:-}"
 export TORCH_HOME=${TORCH_HOME:-$PROJECT_ROOT/.torch_cache}
