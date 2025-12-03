@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=compare_models
-#SBATCH --output=compare_models_%j.out
-#SBATCH --error=compare_models_%j.err
+#SBATCH --output=/scratch/bingxu97/logs/compare_models_%j.out
+#SBATCH --error=/scratch/bingxu97/logs/compare_models_%j.err
 #SBATCH --time=02:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -29,32 +29,34 @@ export OPENBLAS_VERBOSE=0
 export OPENBLAS_MAIN_FREE=1
 
 # Set working directory
-cd /home/gjp1993/links/scratch/COMP6321_Project
+PROJECT_ROOT="/home/bingxu97/links/scratch/COMP6321_Project"
+cd $PROJECT_ROOT
 
 # Load required modules for shared libraries  
 module load StdEnv/2023
 module load gcc/12.3
+module load python/3.10
+module load cuda/12.9
+module load python/3.10
+module load cuda/12.9
 
-# Initialize conda properly
-export CONDA_BASE_ENV="/home/gjp1993/miniconda3"
-source $CONDA_BASE_ENV/etc/profile.d/conda.sh
+# Create necessary directories in /scratch
+mkdir -p "/scratch/bingxu97/logs"
+mkdir -p "/scratch/bingxu97/models"
+mkdir -p "/scratch/bingxu97/results/plots"
 
-# Activate ml_project environment
-echo "Activating ml_project conda environment..."
-conda deactivate 2>/dev/null || true
-conda activate ml_project
+# Activate virtual environment
+VENV_DIR="/scratch/bingxu97/comp6321_env"
+echo "Activating virtual environment..."
+source "$VENV_DIR/bin/activate"
+
+# Set environment variables for data caching
+export SCIKIT_LEARN_DATA="/scratch/bingxu97/scikit_learn_data"
+export TORCH_HOME="/scratch/bingxu97/torch_cache"
+export PYTHONPATH="$PROJECT_ROOT:${PYTHONPATH:-}"
 
 # Verify environment activation
-echo "Current conda environment: $CONDA_DEFAULT_ENV"
 echo "Python path: $(which python)"
-
-# Fix library path issues
-export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
-
-# Clean Python environment variables to avoid conflicts
-unset PYTHONPATH
-export PYTHONNOUSERSITE=1
 
 echo "Starting model comparison at $(date)"
 echo "Running on node: $HOSTNAME"
@@ -87,7 +89,7 @@ echo "Checking other required packages:"
 python -c "import pandas; print('Pandas version:', pandas.__version__)" || echo "Pandas not found!"
 python -c "import sklearn; print('Scikit-learn version:', sklearn.__version__)" || echo "Scikit-learn not found!"
 echo ""
-
+cd /home/bingxu97/links/scratch/COMP6321_Project
 # Run the Python script
 echo "Running main.py to train DNN..."
 python main.py
