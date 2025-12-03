@@ -36,6 +36,11 @@ mkdir -p "/scratch/bingxu97/results/plots"
 echo "Activating virtual environment..."
 source "$VENV_DIR/bin/activate"
 
+# Set environment variables for data caching
+export SCIKIT_LEARN_DATA="/scratch/bingxu97/scikit_learn_data"
+export TORCH_HOME="/scratch/bingxu97/torch_cache"
+export PYTHONPATH="$PROJECT_ROOT:${PYTHONPATH:-}"
+
 # Verify GPU
 echo ""
 echo "=========================================="
